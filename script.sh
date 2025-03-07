@@ -1,37 +1,43 @@
-az login
-az account set --subscription "your-subscription-name"
-az group create --name myResourceGroup --location eastus
-az storage account create --name myfuncstorageaccount --location eastus --resource-group myResourceGroup --sku Standard_LRS
-az functionapp create --resource-group myResourceGroup --consumption-plan-location eastus \
-  --runtime python --runtime-version 3.9 \
-  --functions-version 4 \
-  --name myFastApiApp \
-  --storage-account myfuncstorageaccount
-#az functionapp deployment source config-zip --resource-group myResourceGroup --name myFastApiApp --src myFastApiApp.zip
+# #!/bin/bash
 
-#install func core tools
-# setup locally
-func init --worker-runtime python
-func new --name HttpTrigger --template "HTTP trigger"
+# # Usage: bash script.sh
+# # Description: This script is used to deploy the FastAPI app to Azure Functions
 
 
-# deploy to azure
-func azure functionapp publish myFastApiApp
-az functionapp log tail --name myFastApiApp --resource-group myResourceGroup
-az functionapp show --name myFastApiApp --resource-group myResourceGroup --query defaultHostName --output tsv
-curl https://<your-function-app-name>.azurewebsites.net/api/HttpTrigger
+# az login
+# az account set --subscription "your-subscription-name"
+# az group create --name myResourceGroup --location eastus
+# az storage account create --name myfuncstorageaccount --location eastus --resource-group myResourceGroup --sku Standard_LRS
+# az functionapp create --resource-group myResourceGroup --consumption-plan-location eastus \
+#   --runtime python --runtime-version 3.9 \
+#   --functions-version 4 \
+#   --name myFastApiApp \
+#   --storage-account myfuncstorageaccount
+# #az functionapp deployment source config-zip --resource-group myResourceGroup --name myFastApiApp --src myFastApiApp.zip
+
+# #install func core tools
+# # setup locally
+# func init --worker-runtime python
+# func new --name HttpTrigger --template "HTTP trigger"
 
 
-func azure functionapp publish myFastApiApp
+# # deploy to azure
+# func azure functionapp publish myFastApiApp
+# az functionapp log tail --name myFastApiApp --resource-group myResourceGroup
+# az functionapp show --name myFastApiApp --resource-group myResourceGroup --query defaultHostName --output tsv
+# curl https://<your-function-app-name>.azurewebsites.net/api/HttpTrigger
 
-az functionapp show --name npflserver --resource-group npfl-api-rg
+
+# func azure functionapp publish myFastApiApp
+
+# az functionapp show --name npflserver --resource-group npfl-api-rg
 
 
----
-az functionapp config appsettings set \
-  --name npflserver \
-  --resource-group npfl-api-rg \
-  --settings APPINSIGHTS_INSTRUMENTATIONKEY=<your-instrumentation-key>
+# ---
+# az functionapp config appsettings set \
+#   --name npflserver \
+#   --resource-group npfl-api-rg \
+#   --settings APPINSIGHTS_INSTRUMENTATIONKEY=<your-instrumentation-key>
 
 
 
