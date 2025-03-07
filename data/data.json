@@ -1,0 +1,101 @@
+[
+    {
+        "club":"Akwa United",
+        "full_name":"Akwa United Football Club",
+        "short_name":"AKW",
+        "nickname":"Promise Keepers",
+        "stadium":"Godwill Akpabio International Stadium, Uyo",
+        "titles_won":1,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/akwa_united_logo.png"
+    },
+    {
+        "club":"Enyimba",
+        "full_name":"Enyimba Football Club",
+        "short_name":"ENY",
+        "nickname":"People's Elephants",
+        "stadium":"Enyimba International Stadium, Aba",
+        "titles_won":9,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/enyimba_logo.png"
+    },
+    {
+        "club":"Enugu Rangers",
+        "full_name":"Rangers International Football Club",
+        "short_name":"RAN",
+        "nickname":"Flying Antelopes",
+        "stadium":"Nnamdi Azikiwe Stadium, Enugu",
+        "titles_won":8,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/rangers_logo.png"
+    },
+    {
+        "club":"Heartland",
+        "full_name":"Heartland Football Club",
+        "short_name":"HEA",
+        "nickname":"Naze Millionaires",
+        "stadium":"Dan Anyiam Stadium, Owerri",
+        "titles_won":5,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/heartland_logo.png"
+    },
+    {
+        "club":"Kano Pillars",
+        "full_name":"Kano Pillars Football Club",
+        "short_name":"KAN",
+        "nickname":"Sai Masu Gida",
+        "stadium":"Sani Abacha Stadium, Kano",
+        "titles_won":4,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/kano_pillars_logo.png"
+    },
+    {
+        "club":"Lobi Stars",
+        "full_name":"Lobi Stars Football Club",
+        "short_name":"LOB",
+        "nickname":"Pride of Benue",
+        "stadium":"Aper Aku Stadium, Makurdi",
+        "titles_won":2,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/lobi_stars_logo.png"
+    },
+    {
+        "club":"Remo Stars",
+        "full_name":"Remo Stars Football Club",
+        "short_name":"REM",
+        "nickname":"Sky Blue Stars",
+        "stadium":"Remo Stars Stadium, Sagamu",
+        "titles_won":0,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/remo_stars_logo.png"
+    },
+    {
+        "club":"Rivers United",
+        "full_name":"Rivers United Football Club",
+        "short_name":"RIV",
+        "nickname":"Pride of Rivers",
+        "stadium":"Adokiye Amiesimaka Stadium, Port Harcourt",
+        "titles_won":1,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/rivers_united_logo.png"
+    },
+    {
+        "club":"Sunshine Stars",
+        "full_name":"Sunshine Stars Football Club",
+        "short_name":"SUN",
+        "nickname":"Owena Waves",
+        "stadium":"Akure Township Stadium Akure, Ondo",
+        "titles_won":0,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/shooting_stars_sc_logo.png"
+    },
+    {
+        "club":"Shooting Stars",
+        "full_name":"Shooting Stars Sports Club",
+        "short_name":"3SC",
+        "nickname":"Oluyole Warriors",
+        "stadium":"Lekan Salami Stadium",
+        "titles_won":5,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/sunshine_stars_logo.png"
+    },
+    {
+        "club":"Plateau United",
+        "full_name":"Plateau United Football Club of Jos",
+        "short_name":"PLA",
+        "nickname":"Plateua Warriors",
+        "stadium":"New Jos Stadium Jos, Nigeria",
+        "titles_won":1,
+        "logo":"https://npflstorage.blob.core.windows.net/logos/plateau_united_logo.png"
+    }
+]
