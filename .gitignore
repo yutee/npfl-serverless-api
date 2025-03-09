@@ -1,3 +1,8 @@
 api-deprecated
 
-infra/.terraform
+api-deprecated/
+api-deprecated/*
+api-deprecated/**/*
+api-deprecated/**/**/*
+
+infra/.terraform/
