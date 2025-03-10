@@ -1,6 +1,6 @@
 # FastAPI app and routes
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from .database import CosmosDB
 
 app = FastAPI()
@@ -12,13 +12,30 @@ def read_root():
 
 @app.get("/clubs")
 def get_clubs():
-    return db.get_clubs()
+    try:
+        return db.get_clubs()
+    except Exception:
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
-@app.get("/clubs/by-titles")
-def get_clubs_by_titles(min_titles: int):
+@app.get("/clubs/{club_name}")
+def get_club_by_name(club_name: str):
+    # work on this endpoint, ensure input is validated and input is standardized to handle lowercase and uppercase inputs
+    club_name = club_name.lower()
     clubs = db.get_clubs()
-    filtered_clubs = [club for club in clubs if int(club["titles_won"]) >= min_titles]
-    return filtered_clubs
+    club = next((club for club in clubs if club["club"].lower() == club_name), None)
+    if club:
+        return club, 200
+    else:
+        raise HTTPException(status_code=404, detail="Club not found")
+
+@app.get("/clubs/by-titles-won")
+def get_clubs_by_titles(min_titles: int):
+    try:
+        clubs = db.get_clubs()
+        filtered_clubs = [club for club in clubs if int(club["titles_won"]) >= min_titles]
+        return filtered_clubs
+    except Exception:
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 @app.get("/clubs/fun-fact")
 def get_fun_fact(club_name: str):

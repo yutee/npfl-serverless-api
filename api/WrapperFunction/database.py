@@ -22,5 +22,8 @@ class CosmosDB:
             c.logo
         FROM c
         """
-        items = list(self.container.query_items(query, enable_cross_partition_query=True))
-        return items
+        try:
+            items = list(self.container.query_items(query, enable_cross_partition_query=True))
+            return items
+        except Exception:
+            return {"Internal Server Error"}
