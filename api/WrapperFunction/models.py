@@ -25,5 +25,3 @@ async def create_user(user: User):
 #     "email": "string"
 # }
 # If the request body is invalid, FastAPI will return a 422 Unprocessable Entity error with a detailed error message.
-
-

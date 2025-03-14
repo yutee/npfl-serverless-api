@@ -2,6 +2,7 @@
 
 from fastapi import FastAPI, HTTPException
 from .database import CosmosDB
+from .utils import openai_fun_fact
 
 app = FastAPI()
 db = CosmosDB()
@@ -37,7 +38,6 @@ def get_clubs_by_titles(min_titles: int):
     except Exception:
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
-@app.get("/clubs/fun-fact")
+@app.get("/fun-fact")
 def get_fun_fact(club_name: str):
-    from .utils import get_fun_fact
-    return {"fun_fact": get_fun_fact(club_name)}
+    return {openai_fun_fact(club_name)}

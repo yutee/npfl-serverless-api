@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     cosmos_database: str
     cosmos_container: str
 
+    openai_api_key: str
+
     class Config:
         env_file = ".env"
 
