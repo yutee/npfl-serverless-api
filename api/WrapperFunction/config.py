@@ -1,8 +1,9 @@
-# Configuration settings (e.g., environment variables) - load environment variables from a .env file here, should contain details for database connection
+# configuration settings (e.g., environment variables) - load environment variables from a .env file here, should contain details for database connection
 
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
+    """class to handle loading environment variables"""
     cosmos_endpoint: str
     cosmos_key: str
     cosmos_database: str

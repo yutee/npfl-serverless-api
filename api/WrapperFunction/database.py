@@ -4,6 +4,7 @@ from azure.cosmos import CosmosClient
 from .config import settings
 
 class CosmosDB:
+    """class to handle cosmosdb connection and queries"""
     def __init__(self):
         self.client = CosmosClient(settings.cosmos_endpoint, settings.cosmos_key)
         self.database = self.client.get_database_client(settings.cosmos_database)

@@ -5,6 +5,7 @@ from .config import settings
 client = OpenAI(api_key=settings.openai_api_key)
 
 def openai_fun_fact(club_name: str):
+    """get fun fact about club from openai api"""
     try:
         response = client.chat.completions.create(
         model="gpt-4o-mini",
