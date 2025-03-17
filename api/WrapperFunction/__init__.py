@@ -45,4 +45,4 @@ def get_clubs_by_titles(min_titles: int):
 @app.get("/fun-fact")
 def get_fun_fact(club_name: str):
     """get fun fact about club"""
-    return {openai_fun_fact(club_name)}
+    return openai_fun_fact(club_name)
