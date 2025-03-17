@@ -8,10 +8,6 @@ class Settings(BaseSettings):
     cosmos_database: str
     cosmos_container: str
 
-    azure_client_id: str
-    azure_tenant_id: str
-    azure_client_secret: str
-
     class Config:
         env_file = ".env"
 
