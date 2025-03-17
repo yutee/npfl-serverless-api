@@ -64,7 +64,7 @@ resource "azurerm_storage_blob" "images" {
   source                 = "../data/logos/${each.value}"
 }
 
-# function app for Serverless api
+# function app for serverless api
 resource "azurerm_storage_account" "function_storage" {
   name                     = "${var.function_app_name}"
   resource_group_name      = azurerm_resource_group.rg.name
