@@ -1,4 +1,5 @@
 # NPFL Clubs API
+![gif of api call in action](./data/fastapi_.gif)
 
 ## Overview
 This API provides information about NPFL clubs. Developed with FastAPI, Azure Cosmos DB and Azure Storage and deployed using Azure Function App.
@@ -6,6 +7,7 @@ See a short demo video of the setup process and features [here](link.com).
 
 ## Endpoints
 - `GET /clubs`: Get all clubs.
+- `GET /clubs/{club_name}`: Get club by name.
 - `GET /clubs/by-titles?min_titles=5`: Get clubs with at least 5 titles.
 - `GET /clubs/fun-fact?club_name=Enyimba`: Get a fun fact about a club.
 
@@ -21,6 +23,14 @@ See a short demo video of the setup process and features [here](link.com).
 2. Install Azure Core Tools (Func)
 3. Create Azure Function App
 4. Run
+```bash
+func start
+```
+5. To publish to Azure Function App, run:
+```bash
+func azure functionapp publish <function_app_name>
+```
 
 OR,
+
 Run the `script.sh` script.

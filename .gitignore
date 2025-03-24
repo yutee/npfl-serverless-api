@@ -1,8 +1,13 @@
-api-deprecated
+api/.env
+api/venv
+api/__pycache__
+api/.pytest_cache
 
-api-deprecated/
-api-deprecated/*
-api-deprecated/**/*
-api-deprecated/**/**/*
 
 infra/.terraform/
+infra/.terraform.lock.hcl
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+infra/terraform.tfvars
+
+./script.sh
