@@ -1,7 +1,9 @@
 # Cosmos DB connection and queries
 
 from azure.cosmos import CosmosClient
-from .config import settings
+from .config import settingsi
+
+cosmos_key = "2zYP45gow0QfUmNyXgMbW7G1K0D"
 
 class CosmosDB:
     """class to handle cosmosdb connection and queries"""
