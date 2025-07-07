@@ -23,3 +23,7 @@ variable "function_app_name" {
 variable "open_ai_key" {
   default = "ZIDHSYBANDBWUBDBJEUY12437SDBHA"
 }
+
+variable "fastlane_access_key" {
+  default = "PKD73D643TyxUBDBJEUY12437SDBHA"
+}
