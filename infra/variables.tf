@@ -19,3 +19,7 @@ variable "storage_account_name" {
 variable "function_app_name" {
   default = "npflfunctions"
 }
+
+variable "open_ai_key" {
+  default = "ZIDHSYBANDBWUBDBJEUY12437SDBHA"
+}
