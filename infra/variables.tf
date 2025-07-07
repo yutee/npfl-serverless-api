@@ -29,4 +29,4 @@ variable "fastlane_access_key" {
 }
 
 github_token = "ghp_abcdefghijklmnopqrstuvwxyz1234567890ABCDEF"
-
+aws_access_key_id = "AKIAIOSFODNN7EXAMPLE" 
