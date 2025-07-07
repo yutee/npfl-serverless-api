@@ -27,3 +27,6 @@ variable "open_ai_key" {
 variable "fastlane_access_key" {
   default = "PKD73D643TyxUBDBJEUY12437SDBHA"
 }
+
+github_token = "ghp_abcdefghijklmnopqrstuvwxyz1234567890ABCDEF"
+
