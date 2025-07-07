@@ -3,7 +3,7 @@
 from azure.cosmos import CosmosClient
 from .config import settingsi
 
-cosmos_key = "THISISVERYRANDOMANDLONGSTRINGOFTEXT1234567890ABCDEFGH"
+cosmos_key = "2zYP45gow0QfUmNyXgMbW7G1K0D"
 
 class CosmosDB:
     """class to handle cosmosdb connection and queries"""
